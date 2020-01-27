@@ -10,8 +10,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>cloud-eureka-server</module>
-        <module>cloud-eureka-client</module>
+        <module>cloud-eureka</module>
+        <module>cloud-eureka-service</module>
     </modules>
 
     <properties>
