@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.RequestParam;
  * ·cloud-eureka-service->yml->spring.application.name
  * fallback出错时调用类中，类中方法参数保持一致
  *
+ * 当service宕掉后，自动使用Hystrix容错，调用相应方法
+ * ·未开任何service情况下，调用本模块HelloController接口，进入容错方法
+ *
  * ------------------------------------------------------
  *
  * 自定义配置
