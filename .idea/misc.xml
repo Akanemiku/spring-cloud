@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/cloud-eureka-service/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-ribbon/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-eureka-service2/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-feign/pom.xml" />
       </list>
     </option>
   </component>

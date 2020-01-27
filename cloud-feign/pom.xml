@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>github.akanemiku</groupId>
-    <artifactId>cloud-ribbon</artifactId>
+    <artifactId>cloud-feign</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>cloud-ribbon</name>
-    <packaging>jar</packaging>
+    <name>cloud-feign</name>
+    <description>Demo project for Spring Boot</description>
 
     <parent>
         <artifactId>spring-cloud</artifactId>
@@ -26,11 +26,7 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
     </dependencies>
 

@@ -15,7 +15,7 @@ public class ConsumerController {
     @Value("${server.port}")
     private String port;
 
-    @GetMapping("hello")
+    @GetMapping("/hello")
     public String hello(@RequestParam(value = "name", defaultValue = "forwei") String name){
         return "Hello " + name + ", I am from port:" + port;
     }
