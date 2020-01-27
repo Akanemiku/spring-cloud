@@ -12,7 +12,10 @@
     <modules>
         <module>cloud-eureka</module>
         <module>cloud-eureka-service</module>
+        <module>cloud-eureka-service2</module>
         <module>cloud-ribbon</module>
+        <module>cloud-feign</module>
+        <module>cloud-zuul-gateway</module>
     </modules>
 
     <properties>

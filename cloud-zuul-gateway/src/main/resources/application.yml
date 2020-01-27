@@ -1,0 +1,20 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: cloud-zuul-gateway
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8081/eureka/
+zuul:
+  routes:
+    hello:
+      # zuul.routes.{route}.path：自定义路由的规则，通过path配置路径进行过滤
+      path: /hello/**
+      # zuul.routes.{route}.url: 自定义路由的规则，访问上述的路径会转发到该配置的地址
+      url: http://localhost:8085/hello
+  # 若自定义异常过滤器，则需要禁用SendErrorFilter过滤器
+  SendErrorFilter:
+    error:
+      disable: true

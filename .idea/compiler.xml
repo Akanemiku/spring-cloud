@@ -13,6 +13,7 @@
         <module name="cloud-eureka-service2" />
         <module name="cloud-feign" />
         <module name="cloud-ribbon" />
+        <module name="cloud-zuul-gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -23,6 +24,7 @@
       <module name="cloud-eureka-service2" target="1.8" />
       <module name="cloud-feign" target="1.8" />
       <module name="cloud-ribbon" target="1.8" />
+      <module name="cloud-zuul-gateway" target="1.8" />
       <module name="eureka-client" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="spring-cloud" target="1.8" />
@@ -37,6 +39,7 @@
       <module name="cloud-eureka-service2" options="-parameters" />
       <module name="cloud-feign" options="-parameters" />
       <module name="cloud-ribbon" options="-parameters" />
+      <module name="cloud-zuul-gateway" options="-parameters" />
       <module name="eureka-client" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="spring-cloud" options="-parameters" />
