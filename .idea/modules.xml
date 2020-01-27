@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/cloud-eureka/cloud-eureka.iml" filepath="$PROJECT_DIR$/cloud-eureka/cloud-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-eureka-service/cloud-eureka-service.iml" filepath="$PROJECT_DIR$/cloud-eureka-service/cloud-eureka-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-eureka-service2/cloud-eureka-service2.iml" filepath="$PROJECT_DIR$/cloud-eureka-service2/cloud-eureka-service2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-ribbon/cloud-ribbon.iml" filepath="$PROJECT_DIR$/cloud-ribbon/cloud-ribbon.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud.iml" filepath="$PROJECT_DIR$/spring-cloud.iml" />
     </modules>
   </component>

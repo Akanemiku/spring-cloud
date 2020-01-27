@@ -8,5 +8,9 @@
     <file url="file://$PROJECT_DIR$/cloud-eureka-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-eureka-server/src/main/resources/application.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-eureka-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-eureka-service/src/main/resources/application.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-eureka-service2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-eureka-service2/src/main/resources/application.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-ribbon" charset="UTF-8" />
   </component>
 </project>

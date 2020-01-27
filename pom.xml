@@ -12,6 +12,7 @@
     <modules>
         <module>cloud-eureka</module>
         <module>cloud-eureka-service</module>
+        <module>cloud-ribbon</module>
     </modules>
 
     <properties>
