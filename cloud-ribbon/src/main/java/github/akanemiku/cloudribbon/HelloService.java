@@ -11,6 +11,12 @@ public class HelloService {
     @Autowired
     RestOperations restTemplate;
 
+    /**
+     * 使用ribbon进行负载均衡，调用名称相同的服务
+     * ·服务中要有对应方法
+     * @param name
+     * @return
+     */
     public String hello(String name){
         return restTemplate.getForObject("http://eureka-service/hello?name="+name, String.class);
     }
