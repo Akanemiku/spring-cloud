@@ -7,23 +7,23 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8081/eureka/
-# 开启feign的hystrix
+# 寮�鍚痜eign鐨刪ystrix
 feign:
   hystrix:
     enabled: true
 
-# 更改ribbon负载均衡策略
+# 鏇存敼ribbon璐熻浇鍧囪　绛栫暐
 eureka-service:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
 
-# com.netflix.loadbalancer.RandomRule #配置规则 随机
-# com.netflix.loadbalancer.RoundRobinRule #配置规则 轮询
-# com.netflix.loadbalancer.RetryRule #配置规则 重试
-# com.netflix.loadbalancer.WeightedResponseTimeRule #配置规则 响应时间权重
-# com.netflix.loadbalancer.BestAvailableRule #配置规则 最空闲连接策略
+# com.netflix.loadbalancer.RandomRule #閰嶇疆瑙勫垯 闅忔満
+# com.netflix.loadbalancer.RoundRobinRule #閰嶇疆瑙勫垯 杞
+# com.netflix.loadbalancer.RetryRule #閰嶇疆瑙勫垯 閲嶈瘯
+# com.netflix.loadbalancer.WeightedResponseTimeRule #閰嶇疆瑙勫垯 鍝嶅簲鏃堕棿鏉冮噸
+# com.netflix.loadbalancer.BestAvailableRule #閰嶇疆瑙勫垯 鏈�绌洪棽杩炴帴绛栫暐
 
-# HystrixDashboard路由
+# HystrixDashboard璺敱
 management:
   endpoints:
     web:

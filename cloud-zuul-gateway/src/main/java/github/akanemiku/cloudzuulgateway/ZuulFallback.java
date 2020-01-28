@@ -20,7 +20,7 @@ import java.io.InputStream;
  */
 @Component
 public class ZuulFallback implements FallbackProvider {
-    private static  final  String SERVER_NAME="*";
+    private static final String SERVER_NAME = "*";
 
     @Override
     public String getRoute() {
@@ -38,9 +38,10 @@ public class ZuulFallback implements FallbackProvider {
             return response(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+
     //处理
     private ClientHttpResponse response(final HttpStatus status) {
-        String msg="该"+SERVER_NAME+"服务暂时不可用!";
+        String msg = "该" + SERVER_NAME + "服务暂时不可用!";
         return new ClientHttpResponse() {
             @Override
             public HttpStatus getStatusCode() throws IOException {
@@ -75,7 +76,6 @@ public class ZuulFallback implements FallbackProvider {
             }
         };
     }
-
 
 
     @Bean

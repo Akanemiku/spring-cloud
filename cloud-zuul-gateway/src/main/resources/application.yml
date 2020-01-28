@@ -7,14 +7,36 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8081/eureka/
+
+# zuul.routes.{route}.path：自定义路由的规则，通过path配置路径进行过滤
+# zuul.routes.{route}.url: 自定义路由的规则，访问上述的路径会转发到该配置的地址
+
+# serviceId实现网关
+# ·http://localhost:9000/cloud-feign/hello/test或
+# ·http://localhost:9000/hi/hello/test 可用serviceId或route访问(注意route与path中一致)
+# 当feign调用的服务不可用或feign本身不可用时，进入Zuul的fallback
 zuul:
+  #添加后无法使用serviceId进行访问，值"*"为全部路由
+#  ignored-services: cloud-feign
   routes:
-    hello:
-      # zuul.routes.{route}.path���Զ���·�ɵĹ���ͨ��path����·�����й���
-      path: /hello/**
-      # zuul.routes.{route}.url: �Զ���·�ɵĹ��򣬷���������·����ת���������õĵ�ַ
-      url: http://localhost:8085/hello
-  # ���Զ����쳣������������Ҫ����SendErrorFilter������
+    hi:
+      serviceId: cloud-feign
+      path: /hi/**
+  # 若自定义异常过滤器，则需要禁用SendErrorFilter过滤器
   SendErrorFilter:
     error:
       disable: true
+
+
+# 通过path和url实现网关
+# ·http://localhost:9000/hello/test访问
+# 当feign调用的服务不可用时，启动feign对应服务的hystrix
+# 当feign本身不可用时，程序报错进入SendErrorFilter
+#zuul:
+#  routes:
+#    hello:
+#      path: /hello/**
+#      url: http://localhost:8085/hello
+
+
+
