@@ -16,6 +16,8 @@ eureka:
 # ·http://localhost:9000/hi/hello/test 可用serviceId或route访问(注意route与path中一致)
 # 当feign调用的服务不可用或feign本身不可用时，进入Zuul的fallback
 zuul:
+  #添加前缀，所有路由都要加上这个前缀
+#  prefix:
   #添加后无法使用serviceId进行访问，值"*"为全部路由
 #  ignored-services: cloud-feign
   routes:
