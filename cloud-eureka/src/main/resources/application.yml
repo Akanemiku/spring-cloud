@@ -3,12 +3,12 @@ server:
 
 eureka:
   instance:
-    hostname: localhost #µ±Ç°ÊµÀıÖ÷»úÃû
+    hostname: localhost #å½“å‰å®ä¾‹ä¸»æœºå
   client:
-    register-with-eureka: false #²»Ïò×¢²áÖĞĞÄ×¢²á×Ô¼º
-    fetch-registry: false #½ûÖ¹¼ìË÷·şÎñ
+    register-with-eureka: false #ä¸å‘æ³¨å†Œä¸­å¿ƒæ³¨å†Œè‡ªå·±
+    fetch-registry: false #ç¦æ­¢æ£€ç´¢æœåŠ¡
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ #·şÎñ×¢²á·¢ÏÖµÄµØÖ·
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ #æœåŠ¡æ³¨å†Œå‘ç°çš„åœ°å€
 
 spring:
   application:
